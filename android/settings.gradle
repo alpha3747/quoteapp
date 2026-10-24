@@ -1,0 +1,19 @@
+pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
+plugins { id("com.facebook.react.settings") }
+
+def getNpxCommand() {
+    def locations = ["/opt/homebrew/bin/npx", "/usr/local/bin/npx", "npx"]
+    for (location in locations) {
+        if (new File(location).exists()) {
+            return location
+        }
+    }
+    return "npx"
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex ->
+    ex.autolinkLibrariesFromCommand([getNpxCommand(), "@react-native-community/cli", "config"])
+}
+rootProject.name = 'quotely'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')

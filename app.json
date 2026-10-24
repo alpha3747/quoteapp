@@ -1,42 +1,4 @@
 {
-  "expo": {
-    "name": "quoteapp",
-    "slug": "quoteapp",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "permissions": ["NOTIFICATIONS"],
-      "adaptiveIcon": {
-        "foregroundImage": "",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": ""
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
-  }
+  "name": "quotely",
+  "displayName": "Quotely"
 }
